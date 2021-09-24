@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css"/>
+    <title>Listado de Personas</title>
+</head>
+<body onload="mostrarPersonas()">
+
+    <div class="contenedor" id='cabecero'/>
+    <h1>Listado de Personas</h1>
+    </div>
+
+    <div class="contenedor">
+        <div class="elemento">
+            <ul id="personas">
+                <!-- <li id="personas"> juan </li> -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="portaBoton">
+            <button class="boton_accion" onclick="agregarPersona()"> Agregar Personas</button>
+        </div>
+        <br>
+        <form id='formulario_html'>        
+            <input type="text" id="nombre_form" placeholder="Ingrese su nombre">
+            <input type="text" id="apellido_form" placeholder="Ingrese su apellido">
+        </form>
+        <br>
+        <div class="portaBoton">
+            <button class="boton_accion" onclick="limpiarPersonas()"> Limpiar Personas</button>
+        </div>
+    </div>
+    
+    <div class="contenedor" >
+        <div id="mensaje"></div>
+    </div>
+
+    <script src="js/persona.js"></script>
+    <script src="js/motor.js"/></script>
+</body>
+</html>
